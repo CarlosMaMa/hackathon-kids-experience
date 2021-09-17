@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.PlaceholderFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_top_semi_circle_bg"
+        android:scaleType="fitXY"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView android:id="@+id/mathProblem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/SecondaryBase"
+                android:text="2+2=?"
+                android:textSize="56sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="40dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:padding="40dp"
+                android:paddingStart="40dp"
+                android:paddingEnd="12dp">
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:text="9"
+                    android:textSize="42sp"
+                    android:layout_marginBottom="4dp"
+                    style="@style/Button.Base"/>
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:text="3"
+                    android:textSize="42sp"
+                    android:layout_marginTop="4dp"
+                    style="@style/Button.Base"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:padding="40dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="40dp"
+                style="@style/Button.Base">
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:text="4"
+                    android:textSize="42sp"
+                    android:layout_marginBottom="4dp"
+                    style="@style/Button.Base" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:text="5"
+                    android:textSize="42sp"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: 0"
+        android:textSize="20sp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

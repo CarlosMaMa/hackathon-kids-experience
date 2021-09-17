@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HackathonKidsExprerience</string>
+    <string name="tab_text_1">Math</string>
+    <string name="tab_text_2">Colors</string>
+    <string name="tab_text_3">Shapes</string>
+    <string name="math_problem">%1$d %2$s %3$d = ?</string>
+    <string name="score">Score: %1$d</string>
+</resources>
